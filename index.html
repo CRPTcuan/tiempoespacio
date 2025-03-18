@@ -1,148 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TiempoEspacio - Diseño Web, Hosting, Backend WordPress & Blockchain</title>
-    <meta name="description" content="Descubre TiempoEspacio: expertos en diseño web, hosting, backend WordPress y proyectos blockchain. Optimiza y asegura tu sitio web con nuestras soluciones innovadoras y personalizadas.">
-    <meta name="keywords" content="diseño web, hosting, backend WordPress, blockchain, desarrollo web, administración de sitios web, SEO, seguridad web, tienda en línea, mantenimiento web, tecnología blockchain">
+    <title>TiempoEspacio - Web3 Solutions & Blockchain Innovation</title>
+    <meta name="description" content="Descubre TiempoEspacio: Innovación en Web3, diseño web, hosting, backend WordPress y proyectos blockchain. Soluciones del futuro, hoy.">
+    <meta name="keywords" content="web3, diseño web, hosting, backend WordPress, blockchain, desarrollo web, metaverso, NFT, DeFi, smart contracts">
     <meta name="author" content="TiempoEspacio SPA">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        
+        :root {
+            --primary-gradient: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --neon-glow: 0 0 10px rgba(78, 205, 196, 0.5);
+            --card-border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden;
-            font-family: Arial, sans-serif;
+            font-family: 'Orbitron', sans-serif;
+            background: #0F172A;
+            color: white;
+            overflow-x: hidden;
         }
-        .background-container {
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(78, 205, 196, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 107, 107, 0.15) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            perspective: 1000px;
+        }
+
+        .hero {
+            text-align: center;
+            margin: 4rem 0;
+            transform-style: preserve-3d;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .title {
+            font-size: 3.5em;
+            margin-bottom: 1rem;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: var(--neon-glow);
+        }
+
+        .subtitle {
+            font-size: 1.5em;
+            opacity: 0.8;
+            margin-bottom: 3rem;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: var(--card-border);
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card::before {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            overflow: hidden;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s ease;
         }
-        .background {
-            position: absolute;
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: var(--neon-glow);
+        }
+
+        .card:hover::before {
+            transform: translateX(100%);
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            margin-bottom: 1rem;
+            color: #4ECDC4;
+        }
+
+        .card-icon {
+            font-size: 2.5em;
+            margin-bottom: 1.5rem;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            background-size: cover;
-            background-position: center;
-            opacity: 0;
-            animation: fade 20s infinite;
+            pointer-events: none;
+            z-index: -1;
         }
-        .background:nth-child(1) {
-            background-image: url('https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001518/GSFC_20171208_Archive_e001518~orig.jpg');
-        }
-        .background:nth-child(2) {
-            background-image: url('https://images-assets.nasa.gov/image/PIA19878/PIA19878~orig.jpg');
-            animation-delay: 10s;
-        }
-        @keyframes fade {
-            0%, 100% {
-                opacity: 0;
-            }
-            25%, 75% {
-                opacity: 1;
-            }
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            color: white;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-        .title {
-            font-size: 3em;
-            margin-bottom: 20px;
-            animation: infinite-rotation 10s linear infinite;
-        }
-        @keyframes infinite-rotation {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        .button-container {
-            display: flex;
-            gap: 50px;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            animation: float 4s ease-in-out infinite;
-        }
-        .button {
-            width: 150px;
-            height: 150px;
-            background-color: rgba(0, 0, 0, 0.6);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2em;
-            text-decoration: none;
-            transition: background-color 0.3s;
-            cursor: pointer;
-        }
-        .button-backend {
-            border-radius: 50% 50% 0 50%;
-            transform: rotate(-45deg);
-        }
-        .button-blockchain {
-            border-radius: 50% 50% 50% 0;
-            transform: rotate(45deg);
-        }
-        .button:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
+
         @keyframes float {
-            0%, 100% {
-                transform: translateY(-50%);
-            }
-            50% {
-                transform: translateY(-60%);
-            }
+            0%, 100% { transform: translateY(0) rotateX(0); }
+            50% { transform: translateY(-20px) rotateX(5deg); }
         }
-        .dna {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 10px;
-            height: 100%;
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 20%, transparent 20%);
-            background-size: 10px 40px;
-            animation: scroll 4s linear infinite;
-        }
-        @keyframes scroll {
-            from { background-position: 0 0; }
-            to { background-position: 0 40px; }
-        }
-        .infinity {
-            position: absolute;
-            bottom: 10%;
-            font-size: 2em;
-            animation: infinite-rotation 20s linear infinite;
+
+        @media (max-width: 768px) {
+            .title { font-size: 2.5em; }
+            .subtitle { font-size: 1.2em; }
+            .cards-container { grid-template-columns: 1fr; }
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <div class="background-container">
-        <div class="background"></div>
-        <div class="background"></div>
-    </div>
+    <div class="background"></div>
+    <div class="particles" id="particles-js"></div>
+    
     <div class="container">
-        <div class="title">TIEMPOESPACIO<br>Análisis / Diseño / Automatización</div>
-        <div class="button-container">
-            <div class="button button-backend" onclick="window.location.href='https://backend.tiempoespacio.cl/'">Backend Wordpress<br>Diseño Web & Hosting</div>
-            <div class="button button-blockchain" onclick="window.location.href='https://blockchain.tiempoespacio.cl/'">Blockchain Projects</div>
+        <div class="hero">
+            <h1 class="title">TIEMPOESPACIO</h1>
+            <p class="subtitle">Innovación Digital & Blockchain Solutions</p>
         </div>
-        <div class="dna"></div>
-        <div class="infinity">∞</div>
+
+        <div class="cards-container">
+            <div class="card" onclick="window.location.href='https://backend.tiempoespacio.cl/'">
+                <div class="card-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="card-title">Backend WordPress</h3>
+                <p>Desarrollo web profesional y hosting optimizado para máximo rendimiento</p>
+            </div>
+
+            <div class="card" onclick="window.location.href='https://blockchain.tiempoespacio.cl/'">
+                <div class="card-icon">
+                    <i class="fas fa-link"></i>
+                </div>
+                <h3 class="card-title">Blockchain Projects</h3>
+                <p>Soluciones Web3, Smart Contracts y DApps innovadoras</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="card-title">AI Integration</h3>
+                <p>Automatización inteligente y soluciones basadas en IA</p>
+            </div>
+        </div>
     </div>
+
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#4ECDC4' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#4ECDC4',
+                    opacity: 0.2,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: true,
+                    out_mode: 'out'
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+    </script>
 </body>
 </html>
