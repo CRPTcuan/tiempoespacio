@@ -69,6 +69,54 @@
             margin-bottom: 3rem;
         }
 
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .nav-button {
+            padding: 0.8rem 1.5rem;
+            border: 2px solid var(--glass-bg);
+            border-radius: 30px;
+            background: var(--glass-bg);
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-gradient);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--neon-glow);
+            border-color: transparent;
+        }
+
+        .nav-button:hover::before {
+            opacity: 0.2;
+        }
+
+        .nav-button i {
+            margin-right: 8px;
+        }
+
         .cards-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -154,6 +202,14 @@
         <div class="hero">
             <h1 class="title">TIEMPOESPACIO</h1>
             <p class="subtitle">Innovación Digital & Blockchain Solutions</p>
+            <div class="nav-buttons">
+                <a href="https://tiempoespacio.cl" class="nav-button">
+                    <i class="fas fa-server"></i>Versión Centralizada
+                </a>
+                <a href="ipfs://QmXXXXX" class="nav-button">
+                    <i class="fas fa-network-wired"></i>Versión IPFS
+                </a>
+            </div>
         </div>
 
         <div class="cards-container">
