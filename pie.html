@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Footer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        footer {
+            background-color: #666;
+            text-align: center;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer-text {
+            color: #f0f0f0;
+            font-size: 11px;
+            margin-left: 8px;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #555;
+        }
+        .dancer-container {
+            width: 30px;
+            height: 30px;
+            position: relative;
+        }
+        
+        /* Animaciones para las diferentes partes del cuerpo */
+        @keyframes body-dance {
+            0% { transform: translateY(0); }
+            25% { transform: translateY(-1px); }
+            50% { transform: translateY(0); }
+            75% { transform: translateY(-1px); }
+            100% { transform: translateY(0); }
+        }
+        
+        @keyframes left-arm-dance {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(-15deg); }
+            50% { transform: rotate(0deg); }
+            75% { transform: rotate(15deg); }
+            100% { transform: rotate(0deg); }
+        }
+        
+        @keyframes right-arm-dance {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(15deg); }
+            50% { transform: rotate(0deg); }
+            75% { transform: rotate(-15deg); }
+            100% { transform: rotate(0deg); }
+        }
+        
+        @keyframes left-leg-dance {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(10deg); }
+            50% { transform: rotate(0deg); }
+            75% { transform: rotate(-5deg); }
+            100% { transform: rotate(0deg); }
+        }
+        
+        @keyframes right-leg-dance {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(-5deg); }
+            50% { transform: rotate(0deg); }
+            75% { transform: rotate(10deg); }
+            100% { transform: rotate(0deg); }
+        }
+        
+        .dancer-body {
+            animation: body-dance 1s infinite ease-in-out;
+        }
+        
+        .left-arm {
+            transform-origin: top;
+            animation: left-arm-dance 1s infinite ease-in-out;
+        }
+        
+        .right-arm {
+            transform-origin: top;
+            animation: right-arm-dance 1s infinite ease-in-out;
+        }
+        
+        .left-leg {
+            transform-origin: top;
+            animation: left-leg-dance 1s infinite ease-in-out;
+        }
+        
+        .right-leg {
+            transform-origin: top;
+            animation: right-leg-dance 1s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenido de la página -->
+
+    <footer>
+        <div class="dancer-container">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <!-- Cabeza -->
+                <circle cx="12" cy="5" r="2.5" stroke="#333" stroke-width="1.2" fill="none"/>
+                
+                <!-- Grupo del cuerpo con animación -->
+                <g class="dancer-body">
+                    <!-- Torso -->
+                    <line x1="12" y1="7.5" x2="12" y2="14" stroke="#333" stroke-width="1.2"/>
+                    
+                    <!-- Brazos con animación independiente -->
+                    <g class="left-arm">
+                        <line x1="12" y1="9" x2="8" y2="12" stroke="#333" stroke-width="1.2"/>
+                    </g>
+                    <g class="right-arm">
+                        <line x1="12" y1="9" x2="16" y2="12" stroke="#333" stroke-width="1.2"/>
+                    </g>
+                    
+                    <!-- Piernas con animación independiente -->
+                    <g class="left-leg">
+                        <line x1="12" y1="14" x2="9" y2="19" stroke="#333" stroke-width="1.2"/>
+                    </g>
+                    <g class="right-leg">
+                        <line x1="12" y1="14" x2="15" y2="19" stroke="#333" stroke-width="1.2"/>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <span class="footer-text">powered by <a href="https://tiempoespacio.cl" target="_blank">tiempoespacio.cl</a></span>
+    </footer>
+
+</body>
+</html>
