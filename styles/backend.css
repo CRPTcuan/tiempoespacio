@@ -1,0 +1,219 @@
+.backend-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(79, 70, 229, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.15) 0%, transparent 50%);
+    z-index: -1;
+}
+
+.backend-hero {
+    text-align: center;
+    margin: 5rem 0;
+    position: relative;
+}
+
+.backend-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    height: 1px;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(79, 70, 229, 0.5), 
+        rgba(16, 185, 129, 0.5), 
+        transparent
+    );
+}
+
+.backend-title {
+    font-size: 3.5em;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #4F46E5, #10B981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(79, 70, 229, 0.5);
+}
+
+.backend-subtitle {
+    font-size: 1.5em;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.service-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: var(--card-border);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #4F46E5, #10B981);
+}
+
+.service-icon {
+    font-size: 2.5em;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #4F46E5, #10B981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-title {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+    color: #4F46E5;
+}
+
+.tech-stack {
+    margin: 6rem 0;
+    text-align: center;
+}
+
+.tech-title {
+    font-size: 2.5em;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #4F46E5, #10B981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.tech-item {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: var(--card-border);
+    padding: 1.5rem;
+    width: 120px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tech-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+}
+
+.tech-icon {
+    font-size: 2.5em;
+    margin-bottom: 1rem;
+    color: #10B981;
+}
+
+.tech-name {
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.process-section {
+    margin: 6rem 0;
+    text-align: center;
+}
+
+.process-title {
+    font-size: 2.5em;
+    margin-bottom: 4rem;
+    background: linear-gradient(135deg, #4F46E5, #10B981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.process-step {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: var(--card-border);
+    padding: 2rem;
+    width: 250px;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+}
+
+.step-number {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #4F46E5, #10B981);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.step-title {
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+    color: #10B981;
+}
+
+@media (max-width: 768px) {
+    .backend-title {
+        font-size: 2.5em;
+    }
+    
+    .backend-subtitle {
+        font-size: 1.2em;
+    }
+    
+    .tech-grid {
+        gap: 1rem;
+    }
+    
+    .tech-item {
+        width: 100px;
+        padding: 1rem;
+    }
+} 

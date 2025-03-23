@@ -1,0 +1,143 @@
+.blockchain-section {
+    margin: 6rem 0;
+    text-align: center;
+}
+
+.blockchain-title {
+    font-size: 2.5em;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #F5A623, #FF6B6B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(245, 166, 35, 0.5);
+}
+
+.blockchain-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.project {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: var(--card-border);
+    padding: 3rem;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, rgba(245, 166, 35, 0.05) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(245, 166, 35, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: -1;
+}
+
+.project h3 {
+    font-size: 1.8em;
+    margin-bottom: 1.5rem;
+    color: #F5A623;
+}
+
+.project p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.form-section {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: var(--card-border);
+    padding: 3rem;
+    margin-top: 4rem;
+}
+
+.form-section h2 {
+    margin-bottom: 2rem;
+    font-size: 2em;
+    background: linear-gradient(135deg, #F5A623, #FF6B6B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9em;
+    color: #aaaaaa;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.8rem;
+    font-family: 'Orbitron', sans-serif;
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #F5A623;
+    outline: none;
+}
+
+.form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23aaa' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+}
+
+.submit-button {
+    background: linear-gradient(135deg, #F5A623, #FF6B6B);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.submit-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(245, 166, 35, 0.5);
+}
+
+@media (max-width: 768px) {
+    .project {
+        padding: 2rem;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+} 

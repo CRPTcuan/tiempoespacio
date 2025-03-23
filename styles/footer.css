@@ -1,0 +1,96 @@
+footer {
+    background-color: transparent;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.footer-text {
+    color: #aaaaaa;
+    font-size: 11px;
+    margin-left: 8px;
+}
+
+footer a {
+    color: #aaaaaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+.dancer-container {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+/* Animaciones para las diferentes partes del cuerpo */
+@keyframes body-dance {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-1px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(-1px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes left-arm-dance {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-15deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(15deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes right-arm-dance {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-15deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes left-leg-dance {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes right-leg-dance {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.dancer-body {
+    animation: body-dance 1s infinite ease-in-out;
+}
+
+.left-arm {
+    transform-origin: top;
+    animation: left-arm-dance 1s infinite ease-in-out;
+}
+
+.right-arm {
+    transform-origin: top;
+    animation: right-arm-dance 1s infinite ease-in-out;
+}
+
+.left-leg {
+    transform-origin: top;
+    animation: left-leg-dance 1s infinite ease-in-out;
+}
+
+.right-leg {
+    transform-origin: top;
+    animation: right-leg-dance 1s infinite ease-in-out;
+} 
