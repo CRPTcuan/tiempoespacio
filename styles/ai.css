@@ -35,14 +35,16 @@
 }
 
 .feature-card {
-    background: transparent;
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(8px);
     border: var(--card-border);
     transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .feature-card:hover {
     box-shadow: var(--neon-glow);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .workflow-section {
