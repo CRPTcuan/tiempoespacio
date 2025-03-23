@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Footer</title>
+    <title>Footer Components - TiempoEspacio</title>
+    <meta name="description" content="TiempoEspacio: Componentes de footer para la integración en sitios web y aplicaciones.">
+    <meta name="keywords" content="footer, componentes web, diseño web, TiempoEspacio">
+    <meta name="author" content="TiempoEspacio SPA">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <style>
         body {
             margin: 0;
@@ -99,43 +106,216 @@
             transform-origin: top;
             animation: right-leg-dance 1s infinite ease-in-out;
         }
+
+        .content-section {
+            background: var(--glass-bg);
+            border-radius: 20px;
+            border: var(--card-border);
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .footer-example {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: var(--glass-bg);
+            border-radius: 20px;
+            border: var(--card-border);
+        }
+
+        .footer-code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1.5rem;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin-top: 1.5rem;
+            font-family: monospace;
+            color: #e0e0e0;
+        }
+
+        .code-comment {
+            color: #888;
+        }
     </style>
 </head>
 <body>
-
-    <!-- Contenido de la página -->
-
-    <footer>
-        <div class="dancer-container">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <!-- Cabeza -->
-                <circle cx="12" cy="5" r="2.5" stroke="#333" stroke-width="1.2" fill="none"/>
-                
-                <!-- Grupo del cuerpo con animación -->
-                <g class="dancer-body">
-                    <!-- Torso -->
-                    <line x1="12" y1="7.5" x2="12" y2="14" stroke="#333" stroke-width="1.2"/>
-                    
-                    <!-- Brazos con animación independiente -->
-                    <g class="left-arm">
-                        <line x1="12" y1="9" x2="8" y2="12" stroke="#333" stroke-width="1.2"/>
-                    </g>
-                    <g class="right-arm">
-                        <line x1="12" y1="9" x2="16" y2="12" stroke="#333" stroke-width="1.2"/>
-                    </g>
-                    
-                    <!-- Piernas con animación independiente -->
-                    <g class="left-leg">
-                        <line x1="12" y1="14" x2="9" y2="19" stroke="#333" stroke-width="1.2"/>
-                    </g>
-                    <g class="right-leg">
-                        <line x1="12" y1="14" x2="15" y2="19" stroke="#333" stroke-width="1.2"/>
-                    </g>
-                </g>
-            </svg>
+    <div id="particles-js" class="particles"></div>
+    <div class="cyber-background"></div>
+    <div class="grid-overlay"></div>
+    <div class="mutant-landscape">
+        <div class="cyber-city">
+            <div class="city-grid"></div>
+            <div class="buildings">
+                <div class="building"></div>
+                <div class="building"></div>
+                <div class="building"></div>
+                <div class="building"></div>
+                <div class="building"></div>
+                <div class="building"></div>
+                <div class="building"></div>
+                <div class="building"></div>
+                <div class="building"></div>
+            </div>
         </div>
-        <span class="footer-text">powered by <a href="https://tiempoespacio.cl" target="_blank">tiempoespacio.cl</a></span>
-    </footer>
+        <div class="cyber-lines"></div>
+    </div>
+    <div class="cyber-robot">
+        <div class="robot-head">
+            <div class="robot-eye left"></div>
+            <div class="robot-eye right"></div>
+        </div>
+        <div class="robot-body">
+            <div class="robot-circuit"></div>
+            <div class="energy-core"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo">TiempoEspacio</a>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="ai.html">AI</a>
+                <a href="blockchain.html">Blockchain</a>
+                <a href="backend.html">Backend</a>
+            </nav>
+        </header>
 
+        <div class="hero">
+            <h1 class="title">Footer Components</h1>
+            <p class="subtitle">Elementos de pie de página animados y personalizables</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Componente Animado - Figura Bailarina</h2>
+            <p>Este componente es un pequeño personaje animado en SVG que puede utilizarse como parte visual de un footer. Utiliza animaciones CSS para crear un efecto de baile.</p>
+            
+            <div class="footer-example">
+                <footer>
+                    <div class="dancer-container">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Cabeza -->
+                            <circle cx="12" cy="5" r="2.5" stroke="#aaaaaa" stroke-width="1.2" fill="none"/>
+                            
+                            <!-- Grupo del cuerpo con animación -->
+                            <g class="dancer-body">
+                                <!-- Torso -->
+                                <line x1="12" y1="7.5" x2="12" y2="14" stroke="#aaaaaa" stroke-width="1.2"/>
+                                
+                                <!-- Brazos con animación independiente -->
+                                <g class="left-arm">
+                                    <line x1="12" y1="9" x2="8" y2="12" stroke="#aaaaaa" stroke-width="1.2"/>
+                                </g>
+                                <g class="right-arm">
+                                    <line x1="12" y1="9" x2="16" y2="12" stroke="#aaaaaa" stroke-width="1.2"/>
+                                </g>
+                                
+                                <!-- Piernas con animación independiente -->
+                                <g class="left-leg">
+                                    <line x1="12" y1="14" x2="9" y2="19" stroke="#aaaaaa" stroke-width="1.2"/>
+                                </g>
+                                <g class="right-leg">
+                                    <line x1="12" y1="14" x2="15" y2="19" stroke="#aaaaaa" stroke-width="1.2"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <span class="footer-text">powered by <a href="https://tiempoespacio.cl" target="_blank">tiempoespacio.cl</a></span>
+                </footer>
+            </div>
+
+            <div class="footer-code">
+                <pre><span class="code-comment">/* HTML del componente */</span>
+&lt;footer&gt;
+    &lt;div class="dancer-container"&gt;
+        &lt;svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"&gt;
+            <span class="code-comment">&lt;!-- Cabeza --&gt;</span>
+            &lt;circle cx="12" cy="5" r="2.5" stroke="#aaaaaa" stroke-width="1.2" fill="none"/&gt;
+            
+            <span class="code-comment">&lt;!-- Grupo del cuerpo con animación --&gt;</span>
+            &lt;g class="dancer-body"&gt;
+                <span class="code-comment">&lt;!-- Torso --&gt;</span>
+                &lt;line x1="12" y1="7.5" x2="12" y2="14" stroke="#aaaaaa" stroke-width="1.2"/&gt;
+                
+                <span class="code-comment">&lt;!-- Brazos con animación independiente --&gt;</span>
+                &lt;g class="left-arm"&gt;
+                    &lt;line x1="12" y1="9" x2="8" y2="12" stroke="#aaaaaa" stroke-width="1.2"/&gt;
+                &lt;/g&gt;
+                &lt;g class="right-arm"&gt;
+                    &lt;line x1="12" y1="9" x2="16" y2="12" stroke="#aaaaaa" stroke-width="1.2"/&gt;
+                &lt;/g&gt;
+                
+                <span class="code-comment">&lt;!-- Piernas con animación independiente --&gt;</span>
+                &lt;g class="left-leg"&gt;
+                    &lt;line x1="12" y1="14" x2="9" y2="19" stroke="#aaaaaa" stroke-width="1.2"/&gt;
+                &lt;/g&gt;
+                &lt;g class="right-leg"&gt;
+                    &lt;line x1="12" y1="14" x2="15" y2="19" stroke="#aaaaaa" stroke-width="1.2"/&gt;
+                &lt;/g&gt;
+            &lt;/g&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;span class="footer-text"&gt;powered by &lt;a href="https://tiempoespacio.cl" target="_blank"&gt;tiempoespacio.cl&lt;/a&gt;&lt;/span&gt;
+&lt;/footer&gt;</pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-robot-section">
+        <div class="mega-robot">
+            <div class="robot-head-mega">
+                <div class="robot-eye-mega left"></div>
+                <div class="robot-eye-mega right"></div>
+                <div class="robot-antenna-mega"></div>
+            </div>
+            <div class="robot-arms-mega">
+                <div class="robot-arm-mega left"></div>
+                <div class="robot-arm-mega right"></div>
+            </div>
+            <div class="robot-body-mega">
+                <div class="robot-circuit-mega"></div>
+                <div class="energy-core-mega"></div>
+            </div>
+        </div>
+        <div class="powered-by">
+            <h2 class="powered-text">Powered by Tiempoespacio</h2>
+            <p class="tech-subtitle">Innovación • Tecnología • Futuro</p>
+        </div>
+    </div>
+
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#4ECDC4' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#4ECDC4',
+                    opacity: 0.2,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: true,
+                    out_mode: 'out'
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+    </script>
 </body>
 </html>

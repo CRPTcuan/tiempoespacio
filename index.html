@@ -14,12 +14,48 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
+    <div id="particles-js" class="particles"></div>
     <div class="cyber-background"></div>
-    <div class="container">
-        <div class="hero">
-            <h1 class="title">TIEMPOESPACIO</h1>
-            <p class="subtitle">Innovación Digital & Blockchain Solutions</p>
+    <div class="grid-overlay"></div>
+    <div class="mutant-landscape">
+        <div class="cyber-city">
+            <div class="city-grid"></div>
+            <div class="buildings">
+                <div class="building"></div>
+                <div class="building"></div>
+                <div class="building"></div>
+                <div class="building"></div>
+                <div class="building"></div>
+                <div class="building"></div>
+                <div class="building"></div>
+                <div class="building"></div>
+                <div class="building"></div>
+            </div>
         </div>
+        <div class="cyber-lines"></div>
+    </div>
+    <div class="cyber-robot">
+        <div class="robot-head">
+            <div class="robot-eye left"></div>
+            <div class="robot-eye right"></div>
+        </div>
+        <div class="robot-body">
+            <div class="robot-circuit"></div>
+            <div class="energy-core"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo">TiempoEspacio</a>
+            <nav>
+                <a href="index.html" class="active">Inicio</a>
+                <a href="ai.html">AI</a>
+                <a href="blockchain.html">Blockchain</a>
+                <a href="backend.html">Backend</a>
+                <a href="robot.html">Robots</a>
+            </nav>
+        </header>
 
         <div class="nav-buttons">
             <a href="https://tiempoespacio.cl" class="nav-button">
@@ -30,31 +66,100 @@
             </a>
         </div>
 
-        <div class="cards-container">
-            <div class="card" onclick="window.location.href='ai.html'">
-                <div class="card-icon">
-                    <i class="fas fa-robot"></i>
-                </div>
-                <h3 class="card-title">AI Integration</h3>
-                <p>Automatización inteligente y soluciones basadas en IA</p>
-            </div>
-
-            <div class="card" onclick="window.location.href='blockchain.html'">
-                <div class="card-icon">
-                    <i class="fas fa-link"></i>
-                </div>
-                <h3 class="card-title">Blockchain Projects</h3>
-                <p>Soluciones Web3, Smart Contracts y DApps innovadoras</p>
-            </div>
-
-            <div class="card" onclick="window.location.href='backend.html'">
-                <div class="card-icon">
-                    <i class="fas fa-code"></i>
-                </div>
-                <h3 class="card-title">Backend WordPress</h3>
-                <p>Desarrollo web profesional y hosting optimizado para máximo rendimiento</p>
-            </div>
+        <div class="hero">
+            <h1 class="title">TIEMPOESPACIO</h1>
+            <p class="subtitle">Innovación Digital & Blockchain Solutions</p>
         </div>
+
+        <section class="features">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="feature-title">Inteligencia Artificial</h3>
+                    <p>Desarrollamos soluciones de IA personalizadas para automatizar procesos y obtener insights valiosos de tus datos.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3 class="feature-title">Blockchain</h3>
+                    <p>Implementamos smart contracts, DApps y soluciones Web3 para transformar tu negocio con tecnología descentralizada.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="feature-title">Desarrollo Web</h3>
+                    <p>Creamos sitios web optimizados con WordPress y soluciones de backend personalizadas para maximizar tu presencia online.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="feature-title">Componentes Interactivos</h3>
+                    <p>Diseñamos elementos visuales y robots interactivos para mejorar la experiencia de usuario en tus proyectos digitales.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-links">
+            <h2 class="section-title">Explora Nuestros Servicios</h2>
+            <div class="cards-container">
+                <div class="card" onclick="window.location.href='ai.html'">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="card-title">AI Integration</h3>
+                    <p>Automatización inteligente y soluciones basadas en IA</p>
+                </div>
+
+                <div class="card" onclick="window.location.href='blockchain.html'">
+                    <div class="card-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3 class="card-title">Blockchain Projects</h3>
+                    <p>Soluciones Web3, Smart Contracts y DApps innovadoras</p>
+                </div>
+
+                <div class="card" onclick="window.location.href='backend.html'">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="card-title">Backend WordPress</h3>
+                    <p>Desarrollo web profesional y hosting optimizado</p>
+                </div>
+
+                <div class="card" onclick="window.location.href='robot.html'">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="card-title">Robot Gallery</h3>
+                    <p>Componentes robóticos animados para tus proyectos</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-us">
+            <h2 class="section-title">¿Por qué elegirnos?</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>En TiempoEspacio combinamos tecnologías de vanguardia para ofrecer soluciones innovadoras que impulsan el crecimiento de tu negocio. Nuestro equipo de expertos trabaja incansablemente para transformar tus ideas en realidad.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> Experiencia en tecnologías emergentes</li>
+                        <li><i class="fas fa-check-circle"></i> Soluciones personalizadas a medida</li>
+                        <li><i class="fas fa-check-circle"></i> Enfoque centrado en resultados</li>
+                        <li><i class="fas fa-check-circle"></i> Soporte técnico continuo</li>
+                        <li><i class="fas fa-check-circle"></i> Metodologías ágiles de desarrollo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </div>
 
     <div class="footer-robot-section">

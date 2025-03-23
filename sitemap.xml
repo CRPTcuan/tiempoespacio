@@ -2,31 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tiempoespacio.cl/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://tiempoespacio.cl/ai.html</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tiempoespacio.cl/blockchain.html</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tiempoespacio.cl/backend.html</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tiempoespacio.cl/robot.html</loc>
+    <lastmod>2023-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://loud-bed-hundreds.on-fleek.app/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://loud-bed-hundreds.on-fleek.app/ai.html</loc>
+    <lastmod>2023-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://loud-bed-hundreds.on-fleek.app/blockchain.html</loc>
+    <lastmod>2023-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://loud-bed-hundreds.on-fleek.app/backend.html</loc>
+    <lastmod>2023-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://loud-bed-hundreds.on-fleek.app/robot.html</loc>
+    <lastmod>2023-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
