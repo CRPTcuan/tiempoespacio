@@ -13,6 +13,8 @@
     --neon-glow: 0 0 15px rgba(78, 205, 196, 0.7);
     --animation-speed: 2s;
     --glow-size: 15px;
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
 }
 
 * {
@@ -563,4 +565,27 @@ nav a.active {
 .robot-card .energy-core-mega {
     background-color: var(--primary-color);
     box-shadow: 0 0 15px var(--primary-color);
+}
+
+.feature-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: var(--spacing-sm);
+    transition: color 0.3s ease;
+}
+
+.feature-link:hover {
+    color: var(--primary-color);
+}
+
+.feature-link i {
+    transition: transform 0.3s ease;
+}
+
+.feature-link:hover i {
+    transform: translateX(5px);
 } 
