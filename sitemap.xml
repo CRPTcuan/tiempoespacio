@@ -3,31 +3,31 @@
   <url>
     <loc>https://tiempoespacio.cl/</loc>
     <lastmod>2024-03-24</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://tiempoespacio.cl/ai.html</loc>
     <lastmod>2024-03-24</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tiempoespacio.cl/blockchain.html</loc>
     <lastmod>2024-03-24</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tiempoespacio.cl/backend.html</loc>
     <lastmod>2024-03-24</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tiempoespacio.cl/robot.html</loc>
     <lastmod>2024-03-24</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
@@ -35,53 +35,5 @@
     <lastmod>2024-03-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://lacopro.cl/</loc>
-    <lastmod>2024-03-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://momoadventure.cl/</loc>
-    <lastmod>2024-03-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://loud-bed-hundreds.on-fleek.app/</loc>
-    <lastmod>2024-03-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://loud-bed-hundreds.on-fleek.app/ai.html</loc>
-    <lastmod>2024-03-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://loud-bed-hundreds.on-fleek.app/blockchain.html</loc>
-    <lastmod>2024-03-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://loud-bed-hundreds.on-fleek.app/backend.html</loc>
-    <lastmod>2024-03-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://loud-bed-hundreds.on-fleek.app/robot.html</loc>
-    <lastmod>2024-03-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://loud-bed-hundreds.on-fleek.app/projects.html</loc>
-    <lastmod>2024-03-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset> 
