@@ -234,37 +234,12 @@
         });
     </script>
 
-<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-<script type="module">
-	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
-createChat({
-	webhookUrl: 'https://n8n-c714.onrender.com/webhook/63c9eabb-27cd-4905-87b6-d86ebfb035d7/chat',
-	webhookConfig: {
-		method: 'POST',
-		headers: {}
-	},
-	target: '#n8n-chat',
-	mode: 'window',
-	chatInputKey: 'chatInput',
-	chatSessionKey: 'sessionId',
-	metadata: {},
-	showWelcomeScreen: false,
-	defaultLanguage: 'en',
-	initialMessages: [
-		'Hola 👋',
-		'Soy la iA de tiempoespacio.cl  ¿cómo te puedo ayudar?'
-	],
-	i18n: {
-		en: {
-			title: 'Chat iA',
-			subtitle: "tiempoespacio",
-			footer: '',
-			getStarted: 'New Conversation',
-			inputPlaceholder: 'Type your question..',
-		},
-	},
-});
+<script src="chat-widget.min.js"></script>
+<script>
+    new TiempoespacioChat({
+        position: 'bottom-right',  // opcional
+        primaryColor: '#00C853'    // opcional
+    });
 </script>
 
 

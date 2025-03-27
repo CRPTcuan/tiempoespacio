@@ -84,9 +84,9 @@
                     <h3 class="feature-title">Lacopro</h3>
                     <p>Tienda online con WooCommerce, integración de IA y actualización web automática</p>
                     <div class="project-tags">
-                        <span>WordPress</span>
+                        <span>Html5</span>
                         <span>WooCommerce</span>
-                        <span>IA</span>
+                        <span>iA</span>
                     </div>
                     <a href="https://lacopro.cl" class="project-link" target="_blank">
                         Ver Proyecto <i class="fas fa-arrow-right"></i>
@@ -101,9 +101,9 @@
                     <h3 class="feature-title">Momo Adventure</h3>
                     <p>Servicios profesionales en montaña, transporte y logística para mantenimiento de antenas</p>
                     <div class="project-tags">
-                        <span>WordPress</span>
-                        <span>Servicios</span>
-                        <span>Logística</span>
+                        <span>Html5</span>
+                        <span>JavaScript</span>
+                        <span>css</span>
                     </div>
                     <a href="https://momoadventure.cl" class="project-link" target="_blank">
                         Ver Proyecto <i class="fas fa-arrow-right"></i>
@@ -216,37 +216,12 @@
         });
     </script>
 
-<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-<script type="module">
-	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
-createChat({
-	webhookUrl: 'https://n8n-c714.onrender.com/webhook/63c9eabb-27cd-4905-87b6-d86ebfb035d7/chat',
-	webhookConfig: {
-		method: 'POST',
-		headers: {}
-	},
-	target: '#n8n-chat',
-	mode: 'window',
-	chatInputKey: 'chatInput',
-	chatSessionKey: 'sessionId',
-	metadata: {},
-	showWelcomeScreen: false,
-	defaultLanguage: 'en',
-	initialMessages: [
-    'Hola 👋',
-		'Soy la iA de tiempoespacio.cl  ¿cómo te puedo ayudar?'
-	],
-	i18n: {
-		en: {
-			title: 'Chat iA',
-			subtitle: "tiempoespacio",
-			footer: '',
-			getStarted: 'New Conversation',
-			inputPlaceholder: 'Type your question..',
-		},
-	},
-});
+<script src="chat-widget.min.js"></script>
+<script>
+    new TiempoespacioChat({
+        position: 'bottom-right',  // opcional
+        primaryColor: '#00C853'    // opcional
+    });
 </script>
 
 </body>
